@@ -1,0 +1,14 @@
+server:
+  port: 8087
+
+#rocketMQ
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    send-message-timeout: 300000
+    compress-message-body-threshold: 4096
+    max-message-size: 4194304
+    retry-next-server: true
+    retry-times-when-send-async-failed: 0
+    retry-times-when-send-failed: 2
+    group: my-group
