@@ -3,7 +3,7 @@ server:
 
 #rocketMQ
 rocketmq:
-  name-server: 127.0.0.1:9876
+  name-server: 39.108.252.115:9876
   producer:
     send-message-timeout: 300000
     compress-message-body-threshold: 4096
@@ -12,3 +12,15 @@ rocketmq:
     retry-times-when-send-async-failed: 0
     retry-times-when-send-failed: 2
     group: my-group
+
+
+#rocketmqSZ:
+#  name-server: dev2.hdminik.com:9876
+#  producer:
+#    send-message-timeout: 300000
+#    compress-message-body-threshold: 4096
+#    max-message-size: 4194304
+#    retry-next-server: true
+#    retry-times-when-send-async-failed: 0
+#    retry-times-when-send-failed: 2
+#    group: sz-group
